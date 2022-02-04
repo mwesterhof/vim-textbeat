@@ -103,7 +103,7 @@ class VimTextbeatPlugin:
             vim.command('set cursorline&')
         return running
     def reload(self):
-        for i in xrange(2): # first 2 lines check for header
+        for i in range(2): # first 2 lines check for header
             try:
                 line = vim.current.buffer[i]
             except:
